@@ -1,42 +1,71 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>MT5 EMA Dashboard</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        body{
-            font-family: Arial, sans-serif;
-            text-align:center;
-            background:#111;
-            color:white;
-            padding-top:50px;
-        }
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MT5 Trading Dashboard</title>
 
-        .signal{
-            font-size:40px;
-            font-weight:bold;
-            margin-top:30px;
-        }
+<style>
+body{
+    margin:0;
+    font-family: Arial;
+    background:#0f1115;
+    color:white;
+    text-align:center;
+}
 
-        .buy{
-            color:lime;
-        }
+.header{
+    padding:20px;
+    font-size:22px;
+    font-weight:bold;
+    background:#1c1f26;
+}
 
-        .sell{
-            color:red;
-        }
+.card{
+    margin:20px;
+    padding:25px;
+    border-radius:15px;
+    background:#1c1f26;
+    box-shadow:0 0 10px rgba(0,0,0,0.5);
+}
 
-        .none{
-            color:gray;
-        }
-    </style>
+.signal{
+    font-size:50px;
+    font-weight:bold;
+    margin-top:10px;
+}
+
+.buy{ color:#00ff7f; }
+.sell{ color:#ff3b3b; }
+.none{ color:#999; }
+
+.small{
+    font-size:14px;
+    color:#aaa;
+    margin-top:10px;
+}
+</style>
 </head>
+
 <body>
 
-<h1>MT5 EMA Signal Dashboard</h1>
+<div class="header">
+MT5 EMA Trading Dashboard
+</div>
 
-<div class="signal buy">
-🟢 BUY
+<div class="card">
+<div class="small">CURRENT SIGNAL</div>
+<div class="signal buy">🟢 BUY</div>
+<div class="small">Last update: live demo</div>
+</div>
+
+<div class="card">
+<div class="small">BOT STATUS</div>
+<div class="signal none">ACTIVE</div>
+</div>
+
+<div class="card">
+<div class="small">STRATEGY</div>
+<div>EMA 50 / EMA 200 Crossover</div>
 </div>
 
 </body>
